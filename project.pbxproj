@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4277CADC2B2A40F800606962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4277CADA2B2A40ED00606962 /* UIKit.framework */; platformFilter = ios; };
+		4277CADD2B2A40F800606962 /* UIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4277CADA2B2A40ED00606962 /* UIKit.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42F945FA2AFDFCDD0070A858 /* BasketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F945F92AFDFCDD0070A858 /* BasketApp.swift */; };
 		42F945FC2AFDFCDD0070A858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F945FB2AFDFCDD0070A858 /* ContentView.swift */; };
 		42F945FE2AFDFCDD0070A858 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F945FD2AFDFCDD0070A858 /* Item.swift */; };
@@ -34,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4277CADE2B2A40F800606962 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4277CADD2B2A40F800606962 /* UIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4277CADA2B2A40ED00606962 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		42F945F62AFDFCDD0070A858 /* Basket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F945F92AFDFCDD0070A858 /* BasketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketApp.swift; sourceTree = "<group>"; };
 		42F945FB2AFDFCDD0070A858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4277CADC2B2A40F800606962 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4277CAD92B2A40ED00606962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4277CADA2B2A40ED00606962 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42F945ED2AFDFCDD0070A858 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,7 @@
 				42F9460C2AFDFCE10070A858 /* BasketTests */,
 				42F946162AFDFCE10070A858 /* BasketUITests */,
 				42F945F72AFDFCDD0070A858 /* Products */,
+				4277CAD92B2A40ED00606962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +169,7 @@
 				42F945F22AFDFCDD0070A858 /* Sources */,
 				42F945F32AFDFCDD0070A858 /* Frameworks */,
 				42F945F42AFDFCDD0070A858 /* Resources */,
+				4277CADE2B2A40F800606962 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
